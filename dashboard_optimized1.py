@@ -87,11 +87,11 @@ def load_data():
     
     #Charge les données prétraitées à partir des fichiers CSV.
     
-    patr="Challenge_dataset_traité.csv"
+    patr="Challenge dataset traité.xlsx"
     df_2019 = pd.read_csv(data_2019_path)
     df_volontaire = pd.read_csv(data_volontaire_path)
-    df=pd.read_csv(patr)
-    df_volontaires=pd.read_csv(patr)
+    df=pd.read_excel(patr)
+    df_volontaires=pd.read_excel(patr)
     
     # Convertir les colonnes de dates au format datetime
     date_columns = [col for col in df_2019.columns if 'date' in col.lower()]
@@ -1203,7 +1203,7 @@ def main():
             st.write("""Ce modèle prédit si un donneur est éligible ou non en fonction de ses caractéristiques médicales et personnelles.
             Remplissez les informations ci-dessous pour obtenir une prédiction.
         """)
-            df=pd.read_csv("Challenge_dataset_traité.csv")
+            df=pd.read_excel(patr)
             # ==============================
             # 📌 FORMULAIRE DE SAISIE
             # ==============================

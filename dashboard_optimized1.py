@@ -1251,26 +1251,7 @@ def main():
                 result = target_encoder.inverse_transform([prediction])[0]
                  # Afficher des recommandations en fonction de la prédiction
                 st.subheader("Recommandations")
-                if prediction == 1:
-                        st.write("""
-                        Le donneur est prédit comme éligible au don de sang. Voici quelques recommandations:
-                        
-                        - Encourager le donneur à procéder au don
-                        - Fournir des informations sur le processus de don
-                        - Proposer un rendez-vous pour le don
-                        ")
-                elif prediction == 0 :
-                    st.write("""Le donneur est prédit comme temporairement non éligible au don de sang. Voici quelques recommandations:
-                    - Expliquer les raisons potentielles de l inéligibilité temporaire
-                    - Suggérer une période d'attente appropriée
-                    - Proposer un rendez-vous de suivi après la période  d attente
-                    """)
-                else:
-                    st.write(""" Le donneur est prédit comme définitivement non éligible au don de sang. Voici quelques recommandations:
-                    - Expliquer avec tact les raisons de l inéligibilité
-                    - Suggérer d autres moyens de contribuer aux campagnes de don
-                    - Fournir des ressources éducatives sur l'importance du don de sang
-                    """)
+                
 
 
                 # Affichage du résultat

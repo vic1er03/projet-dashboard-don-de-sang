@@ -91,7 +91,6 @@ def load_data():
 # Lire le fichier Excel
     patr = 'Challenge dataset traité.xlsx'
 
-
 # Afficher les premières lignes du fichier
 
     df_2019 = pd.read_csv(data_2019_path)

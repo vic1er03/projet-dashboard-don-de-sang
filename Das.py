@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from pathlib import Path
-url = "data_2019_preprocessed.csv"
+url = "Challenge dataset traité.xlsx"
 data = pd.read_csv(url,sep=';')
 st.dataframe(data)
 
